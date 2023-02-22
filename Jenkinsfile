@@ -1,10 +1,12 @@
 pipeline {
     agent any
+
     stages {
-        stage('Clone') {
+        stage('Hello') {
             steps {
-                git 'https://github.com/thecloudwindy/nodejs-with-jenkinsfile.git'
+                echo 'Hello World'
             }
         }
     }
 }
+
